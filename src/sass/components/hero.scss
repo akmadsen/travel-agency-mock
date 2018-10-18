@@ -10,8 +10,6 @@
     
     position: relative;
     z-index: 200; 
-    
-    @include inset-underglow(); 
 
     .container {    
         display: flex; 
@@ -19,12 +17,16 @@
     }
     
     h1, h2, p { 
-        background: $hero-text-bg; 
         padding: 0 10px;
     }
     
     h1, h2 { 
         font-family: $header-font; 
+    }
+
+    span { 
+        font-family: $paragraph-font; 
+        display: block; 
     }
 
     h1 { 

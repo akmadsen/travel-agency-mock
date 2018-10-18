@@ -283,16 +283,17 @@ nav {
   justify-content: center;
   padding: 30px 10px;
   position: relative;
-  z-index: 200;
-  box-shadow: inset 0 -1px 12px 6px rgba(253, 13, 13, 0.7); }
+  z-index: 200; }
   .hero .container {
     display: flex;
     justify-content: center; }
   .hero h1, .hero h2, .hero p {
-    background: rgba(5, 5, 5, 0.863);
     padding: 0 10px; }
   .hero h1, .hero h2 {
     font-family: "Quando", serif; }
+  .hero span {
+    font-family: "Judson", serif;
+    display: block; }
   .hero h1 {
     font-size: 3em; }
   .hero h2 {
@@ -439,33 +440,7 @@ main {
     text-align: justify; }
 
 .index .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/denys-nevozhai-351730-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; }
-
-.index .container > p {
-  margin-bottom: 80px; }
-
-.index-hero-content {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 75%; }
-  @media (max-width: 992px) {
-    .index-hero-content {
-      width: 100%; } }
-  @media (max-width: 768px) {
-    .index-hero-content {
-      flex-direction: column;
-      align-items: center; }
-      .index-hero-content .hero-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        .index-hero-content .hero-text h1, .index-hero-content .hero-text h2 {
-          text-align: center; } }
+  background-color: orangered; }
 
 .product .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/alex-knight-326705-unsplash.jpg");
