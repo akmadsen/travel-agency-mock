@@ -1,0 +1,101 @@
+// Header Component in General 
+header { 
+    height: $header-height;
+    font-family: $paragraph-font; 
+    
+    background-color: $background-color; 
+    color: $primary-color; 
+
+    @include underglow(); 
+
+    position: relative; 
+    z-index: 300; 
+
+    .container { 
+        display: flex; 
+        align-items: center;
+        
+        font-size: 1.4em; 
+        height: 100%;
+    }
+
+    a { 
+        color: $primary-color; 
+        display: flex; 
+        align-items: center;
+        height: 100%;
+        
+        /* TODO: We need to figure out a good way to indicate hovering in the header*/
+        &:hover { 
+            color: $secondary-color;
+            text-decoration: none; 
+            position: relative; 
+        }
+    }
+
+    @media (max-width: $small-devices) { 
+        span { 
+            font-size: $extra-small-font; 
+        }
+    }
+}
+
+
+// Company Portion of Header 
+.company { 
+    display: flex; 
+    align-items: center; 
+    flex: 3; 
+    
+    height: 100%;
+    
+    i {
+        margin-right: 10px; 
+    }
+}
+
+
+// Nav List portion of Header
+nav { 
+    height: 100%;
+    
+    ul { 
+        display: flex; 
+        align-items: center; 
+        
+        height: 100%;
+        
+        list-style: none; 
+        margin: 0; 
+        padding: 0; 
+    }
+    
+    li { 
+        display: flex;
+        align-items: center; 
+        flex: 1; 
+        width: 150px; 
+        
+        height: 100%;    
+        
+        a { 
+            width: 100%; 
+            justify-content: center; 
+            
+            &:hover { 
+                color: $background-color; 
+                background-color: $primary-color;
+            }
+        }
+    }
+
+    @media (max-width: $medium-devices) {     
+        display: none; 
+    }
+    
+    @media (max-width: $large-devices) { 
+         li { 
+            width: 100px; 
+        }
+    }
+}

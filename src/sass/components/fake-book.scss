@@ -1,0 +1,30 @@
+.fake-book { 
+    width: 200px; 
+    
+    color: $primary-color; 
+    font-family: $paragraph-font; 
+    text-shadow: 1px 1px 2px black;
+
+    background: url($book-cover-url); 
+    background-size: cover; 
+    background-position: center; 
+    
+    @include d-flex-center(); 
+    flex-direction: column; 
+    justify-content: flex-end; 
+    
+    padding-bottom: $padding-margin-base; 
+
+    height: 300px;
+    margin-right: auto; 
+    border-radius: 10px; 
+    
+    @media (max-width: $extra-large-devices) { 
+        margin-right: $padding-margin-base; 
+    }
+
+    @media (max-width: $medium-devices) {   
+        margin-right: 0; 
+        margin-bottom: $padding-margin-base; 
+    }
+}

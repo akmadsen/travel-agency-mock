@@ -1,0 +1,28 @@
+@mixin flex-column {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+@mixin d-flex-center { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+@mixin generate-hero-bg($img-url, $filter-color) { 
+    background: 
+        linear-gradient($filter-color, $filter-color), 
+        url($img-url); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
+@mixin underglow() { 
+    box-shadow: 0px 5px 18px 1px rgba(253, 13, 13, 0.7);
+}
+
+@mixin inset-underglow () { 
+    box-shadow: inset 0 -1px 12px 6px rgba(253, 13, 13, 0.7);
+}

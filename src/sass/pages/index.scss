@@ -1,0 +1,35 @@
+.index { 
+    .hero { 
+        @include generate-hero-bg($index-hero-bg, $hero-img-filter);     
+    }
+
+    .container > p { 
+        margin-bottom: $padding-margin-base * 2; 
+    }
+}
+
+.index-hero-content { 
+    height: 100%;
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 75%; 
+    
+    @media (max-width: $large-devices) {       
+        width: 100%; 
+    }
+
+    @media (max-width: $medium-devices) {
+        flex-direction: column; 
+        align-items: center; 
+
+        .hero-text { 
+            @include flex-column(); 
+
+            h1, h2 { 
+                text-align: center; 
+            }
+        }
+    }
+}

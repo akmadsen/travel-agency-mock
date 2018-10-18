@@ -1,0 +1,41 @@
+.hero { 
+    min-height: $hero-height;
+    color: $primary-color; 
+
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+      
+    padding: 30px 10px; 
+    
+    position: relative;
+    z-index: 200; 
+    
+    @include inset-underglow(); 
+
+    .container {    
+        display: flex; 
+        justify-content: center; 
+    }
+    
+    h1, h2, p { 
+        background: $hero-text-bg; 
+        padding: 0 10px;
+    }
+    
+    h1, h2 { 
+        font-family: $header-font; 
+    }
+
+    h1 { 
+        font-size: $large-font; 
+    }
+
+    h2 { 
+        font-size: $medium-font; 
+    }
+}
+
+.nav-spacer { 
+    height: $header-height;
+}

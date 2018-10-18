@@ -1,0 +1,11 @@
+body { 
+    background-color: $background-color; 
+    overflow-x: hidden; 
+    width: 100vw; 
+}
+
+.nav-container { 
+    width: 100vw; 
+    position: fixed;
+    z-index: 1000; 
+}

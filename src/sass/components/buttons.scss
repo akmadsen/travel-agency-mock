@@ -1,0 +1,84 @@
+%button { 
+    font-family: $paragraph-font; 
+    border: none; 
+}
+
+%open-close-base { 
+    @extend %button; 
+
+    background: $background-color; 
+    color: $primary-color; 
+
+    font-size: 1.4em;
+}
+
+%stylish-base { 
+    @extend %button; 
+
+    background-color: $primary-color;
+    color: $background-color; 
+
+    font-size: 2em; 
+
+    transition: $tween-time;  
+    
+    text-align: center;
+
+    &:hover {
+        background-color: $background-color;
+        color: $primary-color; 
+    }
+
+    &:focus { 
+        outline-color: $accent-color;
+    }
+}
+
+.open-button { 
+    @extend %open-close-base; 
+
+    height: 100%;
+
+    display: none; 
+
+    @media (max-width: $medium-devices) { 
+        display: block; 
+    }
+}
+
+.close-button { 
+    @extend %open-close-base; 
+
+    padding: 5px 20px; 
+
+    margin-bottom: 20px; 
+    
+    &:focus { 
+        outline: 4px solid $accent-color;
+    }
+}
+
+.hero-button { 
+    @extend %stylish-base; 
+
+    text-transform: uppercase; 
+ 
+    font-weight: bold; 
+
+
+    @media (max-width: $small-devices) { 
+        margin-top: $padding-margin-base; 
+        font-size: 1.5em; 
+    }
+}
+
+.submit-button { 
+    @extend %stylish-base; 
+
+    font-size: 1.5em; 
+    padding: $padding-margin-base / 4 $padding-margin-base / 2; 
+
+    &:hover { 
+        outline: 2px solid $primary-color; 
+    }
+}

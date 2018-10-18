@@ -1,0 +1,29 @@
+main {
+    padding: $padding-margin-base 0; 
+    color: $primary-color; 
+
+    position: relative;
+    z-index: 0; 
+
+    @include underglow(); 
+
+    .container { 
+        @include flex-column(); 
+    }
+
+    h2 {
+        color: $primary-color; 
+        text-align: center; 
+
+        font-family: $header-font; 
+        font-size: $large-font; 
+        font-weight: bold; 
+        
+        margin-bottom: $padding-margin-base; 
+    }
+
+    p { 
+        font-family: $paragraph-font; 
+        text-align: justify;
+    }
+}

@@ -1,0 +1,50 @@
+.mobile-menu { 
+    background-color: $primary-color; 
+    width: $mobile-menu-width; 
+    height: 100vh; 
+
+    padding: 40px 0; 
+
+    position: absolute; 
+    top: 0; 
+    right: 0;
+    z-index: 400; 
+
+    @include flex-column(); 
+
+    font-family: $paragraph-font; 
+    
+    transition: $menu-transition-time; 
+    
+    ul { 
+        padding: 0; 
+        width: 100%;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    li { 
+        list-style: none;
+        width: 100%;  
+    }
+    
+    a { 
+        display: block; 
+        text-align: center; 
+        font-size: 1.4em; 
+        color: $background-color; 
+        width: 100%; 
+           
+        &:hover { 
+            background-color: $background-color;     
+            color: $primary-color;
+            text-decoration: none;         
+        }
+    }
+}
+
+
+.closed { 
+    transform: translate($mobile-menu-width, 0px); 
+}

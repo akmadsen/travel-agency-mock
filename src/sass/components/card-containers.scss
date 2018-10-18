@@ -1,0 +1,38 @@
+// --------------------------------------
+// Card Containers
+// --------------------------------------
+
+%card-container-base { 
+    
+    width: 100%;
+
+    display: flex; 
+    flex-wrap: wrap;
+
+    flex-direction: row; 
+    justify-content: space-between; 
+}
+
+.card-container { 
+    @extend %card-container-base; 
+
+    @media (max-width: $medium-devices) {
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: flex-start; 
+    }
+}
+
+.footer-card-container { 
+    @extend %card-container-base; 
+
+    @media (max-width: $medium-devices) {
+        align-items: stretch; 
+    }
+
+    @media(max-width: $small-devices) { 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: flex-start; 
+    }
+}

@@ -1,0 +1,15 @@
+.contact { 
+    .hero { 
+        @include generate-hero-bg($contact-hero-bg, $hero-img-filter); 
+        background-position: 50% 35%; 
+
+        h1 { 
+            text-align: center; 
+        }
+    }
+
+    main { 
+        font-family: $paragraph-font; 
+        color: $primary-color; 
+    }
+}

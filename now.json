@@ -1,0 +1,12 @@
+{ 
+    "type" : "static", 
+    "files": [
+        "index.html", 
+        "about.html", 
+        "product.html", 
+        "contact.html", 
+        "assets", 
+        "css", 
+        "js"  
+    ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "cpnt-270-assignment4",
+  "version": "1.0.0",
+  "description": "__Theme:__ Cyberpunk Novelist Website",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "./node_modules/.bin/gulp watch",
+    "style": "./node_modules/.bin/gulp style"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akmadsen/cpnt-270-assignment4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akmadsen/cpnt-270-assignment4/issues"
+  },
+  "homepage": "https://github.com/akmadsen/cpnt-270-assignment4#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "gulp-wait": "0.0.2"
+  }
+}
