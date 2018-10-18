@@ -1,3 +1,11 @@
+/**
+ * CPNT 262 - Assignment 4 
+ * Alex Madsen
+ * October 19, 2018
+ * 
+ * This file will be for shared functionality between all webpages
+ */
+
 // * * * * * * * * * * * * * * * * * * * * * * * *
 // 1) Set-up 
 // * * * * * * * * * * * * * * * * * * * * * * * *

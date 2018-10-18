@@ -1,7 +1,7 @@
 //  Color Pallette 
-$background-color   : #050505; 
-$primary-color      : #f31616; 
-$secondary-color    : #f84538; 
+$background-color   : #ddd; 
+$primary-color      : navy; 
+$secondary-color    : papayawhip; 
 
 
 // Background and Foreground 
@@ -9,6 +9,8 @@ $accent-color   : #f84538;
 $solid-black    : #1b1212;
 $white          : #fff; 
 $hero-text-bg   : rgba(5, 5, 5, 0.863); 
+$text-light     : #ddd; 
+$text-dark      : #222; 
 
 $hero-img-filter: rgba(0,0,0,0.4);
 
@@ -44,8 +46,9 @@ $tween-time: 0.2s;
 
 
 // Font Families 
-$header-font: 'VT323', monospace; 
-$paragraph-font: 'Shared Tech Mono', monospace; 
+$header-font: 'Quando', serif; 
+$paragraph-font: 'Judson', serif; 
+$button-font: 'Montserrat', sans-serif; 
 
 // Font Sizes 
 $large-font: 3em; 
