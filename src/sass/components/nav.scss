@@ -1,0 +1,37 @@
+// CPNT 262 - Final Project 
+// Alex Madsen
+// October 19, 2018 
+
+// Nav List portion of Header
+nav {
+    height: 100%;
+
+    ul {
+        display: flex;
+        align-items: center;
+
+        height: 100%;
+
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    a { 
+        margin-right: 40px;
+        height: 100%; 
+
+        display: flex; 
+        align-items: center; 
+    }
+
+    @media (max-width: $medium-devices) {
+        display: none;
+    }
+}

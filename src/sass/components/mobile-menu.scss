@@ -1,3 +1,11 @@
+.open-button { 
+    display: none; 
+
+    @media (max-width: $medium-devices) {
+        display: block;
+    }
+}
+
 .mobile-menu { 
     background-color: $primary-color; 
     width: $mobile-menu-width; 

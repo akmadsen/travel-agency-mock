@@ -1,3 +1,8 @@
+// CPNT 262 - Final Project 
+// Alex Madsen
+// October 19, 2018 
+
+
 //  Color Pallette 
 $background-color   : #ddd; 
 $primary-color      : navy; 
@@ -7,6 +12,7 @@ $secondary-color    : papayawhip;
 // Background and Foreground 
 $accent-color   : seagreen; 
 $text-light     : #ddd; 
+$link-hover     : #fff; 
 $text-dark      : #222; 
 
 $hero-img-filter: rgba(0,0,0,0.4);
@@ -23,7 +29,7 @@ $header-height: 80px;
 $hero-height: 600px;
 $footer-height: 300px; 
 
-$padding-margin-base: $header-height / 2; 
+$padding-margin-base: 300px;
 
 // Animation Constants 
 $menu-transition-time: 0.2s; 
@@ -39,6 +45,8 @@ $large-font: 3em;
 $medium-font: 2.5em; 
 $small-font: 1.2em; 
 $extra-small-font: 0.9em; 
+
+$header-font-size: 1.3em; 
 
 $footer-header-size: 1.4em; 
 $footer-body-size: 1em; 
