@@ -173,6 +173,16 @@ footer {
 .flipped {
   transform: scale(-1, 1); }
 
+.error {
+  background-color: salmon;
+  border: 2px solid red;
+  color: red;
+  margin: 20px 0;
+  padding: 10px; }
+
+.error-closed {
+  display: none; }
+
 main {
   background-color: #ddd;
   min-height: 400px; }

@@ -77,43 +77,51 @@
 
     <main>
         <div class="container">
-            <form action="#">
+            <form action="#" name="account-creation-form" id="account-creation-form">
                 <div class="form-field">
+                    <div id="name-error" class="error error-closed">Your name is required</div>
                     <label for="name">Full Name: </label>
                     <input type="text" name="name" id="name">
                 </div>
 
                 <div class="form-field">
+                    <div id="address-error" class="error error-closed">Your address is required</div>
                     <label for="address">Address: </label>
                     <input type="text" name="address" id="address">
                 </div>
 
                 <div class="form-field">
+                    <div id="city-error" class="error error-closed">Your city is required</div>
                     <label for="city">City: </label>
                     <input type="text" name="city" id="city">
                 </div>
 
                 <div class="form-field">
+                    <div id="province-error" class="error error-closed">Your province is required</div>
                     <label for="province">Province: </label>
                     <input type="text" name="province" id="province">
                 </div>
 
                 <div class="form-field">
+                    <div id="postal-error" class="error error-closed">Your postal code is required</div>
+                    <div id="postal-error-bad-format" class="error error-closed">Your postal code must be of the format A0A 0A0.</div>
                     <label for="postal-code">Postal Code: </label>
                     <input type="text" name="postal-code" id="postal-code">
                 </div>
 
                 <div class="form-field">
+                    <div id="email-error" class="error error-closed">Your email is required</div>
                     <label for="email">Email:</label>
                     <input type="text" name="email" id="email">
                 </div>
 
                 <div class="form-field">
+                    <div id="phone-error" class="error error-closed">Your phone number is required</div>
                     <label for="phone">Phone Number:</label>
                     <input type="text" name="phone" id="phone">
                 </div>
 
-                <input type="submit" value="Submit">
+                <input id="submit-button" class="submit-button" type="submit" value="Submit">
             </form>
         </div>
     </main>
@@ -154,6 +162,7 @@
     </footer>
 
     <!-- Custom-Made Scripts -->
+    <script src="./js/account-creation-form.js"></script>
     <script src="./js/app.js"></script>
 </body>
 
