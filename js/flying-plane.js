@@ -12,36 +12,47 @@
 // HTML Element References
 const PLANE = document.getElementById('flying-plane');
 
+// Defined Constants
+const SPEED = 6;
+const PLANE_WIDTH = 50; // FIXME: Hand-found plane width value...
+const REFRESH_MS = 20; // How many ms before refresh 
+const FLIPPED_CLASS = 'flipped';
+const UNITS = 'px'; // Units for our plane's travel 
+
 // Tracking Variables 
 let flyForwards = true;
+let direction = 1; // Only assigned 1 or -1
+
 
 // Function Definitions
-function flyPlane() {
-    let currentLeft = parseInt(PLANE.style.left);
-
-    // FIXME: Magic number of 54 for plane pixel width
-    if (flyForwards && (currentLeft > (window.innerWidth - 54))) {
-        flyForwards = false;
-
-        if (!PLANE.classList.contains('flipped')) {
-            PLANE.classList.add('flipped'); 
-        }
-    }
-
-    if (!flyForwards && (currentLeft <= 0)) {
-        flyForwards = true;
-
-        if (PLANE.classList.contains('flipped')) { 
-            PLANE.classList.remove('flipped'); 
-        }
-    }
-
-    if (flyForwards) {
-        PLANE.style.left = (currentLeft + 10) + 'px';
-    } else {
-        PLANE.style.left = (currentLeft - 10) + 'px';
+function facePlaneLeft() {
+    if (!PLANE.classList.contains(FLIPPED_CLASS)) {
+        PLANE.classList.add(FLIPPED_CLASS);
     }
 }
 
+function facePlaneRight() {
+    if (PLANE.classList.contains(FLIPPED_CLASS)) {
+        PLANE.classList.remove(FLIPPED_CLASS);
+    }
+}
+
+function flyPlane() {
+    let currentLeft = parseInt(PLANE.style.left);
+    let maxLeft = window.innerWidth - PLANE_WIDTH; 
+
+    if ((direction > 0) && (currentLeft > maxLeft)) {
+        direction = -1;
+        facePlaneLeft();
+    }
+
+    if ((direction < 0) && (currentLeft <= 0)) {
+        direction = 1; 
+        facePlaneRight(); 
+    }
+
+    PLANE.style.left = (currentLeft + (direction * SPEED)) + UNITS;
+}
+
 // Initialization Functions
-setInterval(flyPlane, 50);
+setInterval(flyPlane, REFRESH_MS);
