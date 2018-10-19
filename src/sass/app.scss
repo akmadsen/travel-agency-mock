@@ -19,14 +19,13 @@
 @import './components/nav.scss'; 
 @import './components/hero.scss'; 
 @import './components/footer.scss';
+@import './components/main-section.scss'; 
 
 // Specialized Components 
 @import './components/travel-cards.scss'; 
 @import './components/flying-plane.scss'; 
 @import './components/error-messages.scss';
-
-// Large Aggregate Components 
-@import './components/main-section.scss'; 
+@import './components/agent-cards.scss'; 
 
 // Page Specific Styles
 @import './pages/contact.scss';
