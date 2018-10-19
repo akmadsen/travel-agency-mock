@@ -14,22 +14,39 @@
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
+
+    margin-bottom: $std-margin; 
 }
 
 // The display tile itself. 
 .tile-display { 
     height: 400px;
     width: 400px; 
+
+    border-radius: 15px; 
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 // A container for all the interactive Vacation Package tiles 
 .package-tiles { 
     height: 400px;
     width: 500px; 
+    
+    display: flex;  
+    flex-wrap: wrap; 
+    justify-content: flex-end; 
 }
 
 // An individual package tile.
 .package-tile { 
     height: 200px;
     width: 200px; 
+    
+    margin-left: 5px; 
+    margin-bottom: 5px;
+    
+    border-radius: 5px; 
+    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }

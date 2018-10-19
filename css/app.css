@@ -149,19 +149,29 @@ footer {
   height: 400px;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 40px; }
 
 .tile-display {
   height: 400px;
-  width: 400px; }
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
 .package-tiles {
   height: 400px;
-  width: 500px; }
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end; }
 
 .package-tile {
   height: 200px;
-  width: 200px; }
+  width: 200px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
 .flying-plane {
   color: #222;
@@ -187,7 +197,7 @@ main {
   min-height: 400px; }
   main .container {
     padding: 20px 0; }
-  main h2 {
+  main h2, main h3 {
     text-align: center;
     margin-bottom: 40px; }
   main p {
