@@ -1,3 +1,9 @@
+<!-- 
+    CPNT 262 - Final Project 
+    By Alex Madsen
+    October 19, 2018
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,49 +33,42 @@
     <!-- * * * * * * * * * * * * * * * * * * *
         Header and Navigation Components
         * * * * * * * * * * * * * * * * * * * -->
-    <div class="nav-container">
-        <div id="mobile-menu" class="mobile-menu closed">
-            <button id="close-button" class="close-button">Close</button>
-            <ul>
-                <li><a href="./products.html">Vacation Packages</a></li>
-                <li><a href="./register.html">Register</a></li>
-                <li><a href="./contact.html">Contact Us</a></li>
-            </ul>
-        </div>
-
-        <header>
-            <div class="container">
-                <div class="company" href="./index.html">
-                    <a href="./index.html">
-                        <i class="fas fa-plane-departure fa-2x"></i>
-                        <span>Fictional Travels</span>
-                    </a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="./products.html">Vacation Packages</a></li>
-                        <li><a href="./register.html">Register</a></li>
-                        <li><a href="./contact.html">Contact Us</a></li>
-                    </ul>
-                </nav>
-                <button class="open-button" id="open-button"><i class="fas fa-bars"></i></button>
-            </div>
-        </header>
+    <div id="mobile-menu" class="mobile-menu closed">
+        <button id="close-button" class="close-button">Close</button>
+        <ul>
+            <li><a href="./products.html">Vacation Packages</a></li>
+            <li><a href="./register.html">Register</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
     </div>
+
+    <header>
+        <div class="container">
+            <div class="company" href="./index.html">
+                <a href="./index.html">
+                    <i class="fas fa-plane-departure"></i>
+                    <span>Fictional Travels</span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./products.html">Vacation Packages</a></li>
+                    <li><a href="./register.html">Register</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="open-button" id="open-button"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
 
     <!-- * * * * * * * * * * * * * * * * * * *
     Hero 
     * * * * * * * * * * * * * * * * * * * -->
     <div class="hero">
-        <div class="nav-spacer"></div>
         <div class="container">
-            <div class="index-hero-content">
-                <div class="hero-text">
-                    <h1>Fictional Travels</h1>
-                    <span>The Finest in Faraway Places</span>
-                    <button class="hero-button">Book Now!</button>
-                </div>
-            </div>
+            <h1>Index Page</h1>
+            <p>Subtitle Stuff Here</p>
+            <button>Call to Action</button>
         </div>
     </div>
 
@@ -97,23 +96,31 @@
     <footer>
 
         <div class="container">
+            <div class="row">
 
-            <ul class="footer-links">
-                <li><a href="./products.html">Vacation Packages</a></li>
-                <li><a href="./register.html">Our Team</a></li>
-                <li><a href="./contact.html">Contact Us</a></li>
-            </ul>
+                <div class="col-12">
+                    <div class="date-time">October 18, 2018</div>
+                </div>
 
-            <div class="date-time">October 18, 2018</div>
+                <div class="page-links col-6">
+                    <h2>Page Links</h2>
+                    <ul class="footer-links">
+                        <li><a href="./products.html">Vacation Packages</a></li>
+                        <li><a href="./register.html">Our Team</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
 
-            <div class="social-media">
-                <h2>Follow Us</h2>
-                <ul>
-                    <li><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                    <li><a href="#"><i class="fas fa-rss-square fa-2x"></i></a></li>
-                </ul>
+                <div class="social-media col-6">
+                    <h2>Follow Us</h2>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fas fa-rss-square fa-2x"></i></a></li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </footer>

@@ -1,37 +1,30 @@
+// CPNT 262 - Final Project 
+// Alex Madsen
+// October 19, 2018 
+
+
 // Header Component in General 
 header {
-    height: $header-height;
-    font-family: $paragraph-font;
-
     background-color: $primary-color;
-    position: relative;
-    z-index: 300;
+    height: $header-height;
+    
+    font-family: $paragraph-font;
+    font-size: $header-font-size; 
 
     .container {
+        height: 100%;
+ 
         display: flex;
         align-items: center;
-
-        font-size: 1.4em;
-        height: 100%;
     }
 
     a {
         color: $text-light;
-        display: flex;
-        align-items: center;
-        height: 100%;
-
-        /* TODO: We need to figure out a good way to indicate hovering in the header*/
+        
+        // TODO: Clean up hovering in the header
         &:hover {
-            color: $text-dark;
+            color: $link-hover;
             text-decoration: none;
-            position: relative;
-        }
-    }
-
-    @media (max-width: $small-devices) {
-        span {
-            font-size: $extra-small-font;
         }
     }
 }
@@ -41,52 +34,11 @@ header {
 .company {
     display: flex;
     align-items: center;
-    flex: 3;
-
     height: 100%;
+    
+    margin-right: auto; 
 
     i {
         margin-right: 10px;
-    }
-}
-
-
-// Nav List portion of Header
-nav {
-    height: 100%;
-
-    ul {
-        display: flex;
-        align-items: center;
-
-        height: 100%;
-
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    li {
-        display: flex;
-        align-items: center;
-        flex: 1;
-        width: 150px;
-
-        height: 100%;
-    }
-
-    a {
-        width: 100%;
-        justify-content: center;
-    }
-
-    @media (max-width: $medium-devices) {
-        display: none;
-    }
-
-    @media (max-width: $large-devices) {
-        li {
-            width: 100px;
-        }
     }
 }

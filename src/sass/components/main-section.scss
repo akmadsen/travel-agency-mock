@@ -1,29 +1,22 @@
-main {
-    padding: $padding-margin-base 0; 
-    color: $primary-color; 
+// CPNT 262 - Final Project 
+// Alex Madsen
+// October 19, 2018 
 
-    position: relative;
-    z-index: 0; 
 
-    @include underglow(); 
+main { 
+    background-color: $background-color; 
+    min-height: $main-min-height; 
 
     .container { 
-        @include flex-column(); 
+        padding: $std-padding 0; 
     }
 
-    h2 {
-        color: $primary-color; 
+    h2 { 
         text-align: center; 
-
-        font-family: $header-font; 
-        font-size: $large-font; 
-        font-weight: bold; 
-        
-        margin-bottom: $padding-margin-base; 
+        margin-bottom: $std-margin; 
     }
 
     p { 
-        font-family: $paragraph-font; 
         text-align: justify;
     }
 }
