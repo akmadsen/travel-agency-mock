@@ -17,6 +17,7 @@ $text-dark      : #222;
 
 $hero-img-filter: rgba(0,0,0,0.4);
 
+
 // Bootstrap Screen Width Measurements 
 $small-devices         : 576px; 
 $medium-devices        : 768px; 
@@ -26,10 +27,13 @@ $extra-large-devices   : 1200px;
 // Other Fixed Heights and Widths 
 $mobile-menu-width: 300px;
 $header-height: 80px;
-$hero-height: 600px;
-$footer-height: 300px; 
+$hero-height: 400px;
+$main-min-height: 400px;
+$footer-height: 160px; 
 
-$padding-margin-base: 300px;
+$std-padding: 20px; 
+$std-margin: 40px; 
+$padding-margin-base: 40px;
 
 // Animation Constants 
 $menu-transition-time: 0.2s; 

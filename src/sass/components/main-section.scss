@@ -1,0 +1,22 @@
+// CPNT 262 - Final Project 
+// Alex Madsen
+// October 19, 2018 
+
+
+main { 
+    background-color: $background-color; 
+    min-height: $main-min-height; 
+
+    .container { 
+        padding: $std-padding 0; 
+    }
+
+    h2 { 
+        text-align: center; 
+        margin-bottom: $std-margin; 
+    }
+
+    p { 
+        text-align: justify;
+    }
+}
