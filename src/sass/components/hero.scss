@@ -6,8 +6,6 @@
 // Shared features between all headers
 // Most individual pages will overwrite some of these values (such as the background) 
 .hero { 
-    background-color: yellowgreen; 
-
     height: $hero-height; 
 
     .container { 

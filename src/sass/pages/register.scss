@@ -1,0 +1,10 @@
+// CPNT 262 - Final Project 
+// Alex Madsen
+// akmadsen522@gmail.com
+// October 19, 2018 
+
+.register { 
+    .hero { 
+        @include generate-hero-bg($register-hero-url, $hero-img-filter);
+    }
+}

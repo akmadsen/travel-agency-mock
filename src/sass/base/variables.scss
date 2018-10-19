@@ -16,7 +16,7 @@ $text-light     : #ddd;
 $link-hover     : #fff; 
 $text-dark      : #222; 
 
-$hero-img-filter: rgba(0,0,0,0.4);
+$hero-img-filter: rgba(0,0,0,0.2);
 
 
 // Bootstrap Screen Width Measurements 
@@ -58,3 +58,7 @@ $footer-body-size: 1em;
 
 // Image URLs 
 // Once Assets Found - Place here!
+$index-hero-url: "../assets/hero-images/home.jpg"; 
+$contact-hero-url: "../assets/hero-images/our-team.jpg"; 
+$register-hero-url: "../assets/hero-images/register.jpg"; 
+$products-hero-url: "../assets/hero-images/vacation-packages.jpg"; 

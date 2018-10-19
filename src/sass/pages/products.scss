@@ -8,5 +8,6 @@
 .products { 
     .hero { 
         position: relative;
+        @include generate-hero-bg($products-hero-url, $hero-img-filter);
     }
 }

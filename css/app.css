@@ -97,7 +97,6 @@ nav {
       display: none; } }
 
 .hero {
-  background-color: yellowgreen;
   height: 400px; }
   .hero .container {
     height: 100%;
@@ -165,7 +164,7 @@ footer {
   width: 200px; }
 
 .flying-plane {
-  color: blue;
+  color: #222;
   position: relative;
   bottom: 54px;
   left: 0; }
@@ -194,5 +193,27 @@ main {
   main p {
     text-align: justify; }
 
+.contact .hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/hero-images/our-team.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+.index .hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/hero-images/home.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
 .products .hero {
-  position: relative; }
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/hero-images/vacation-packages.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+.register .hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/hero-images/register.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
