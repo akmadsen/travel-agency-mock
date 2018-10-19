@@ -225,6 +225,20 @@ main {
   .agent-card:last-child {
     margin-right: 0; }
 
+form {
+  background-color: #ccc;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.form-field {
+  width: 60%; }
+  .form-field label {
+    display: inline-block; }
+  .form-field input {
+    margin-left: auto; }
+
 .contact .hero {
   background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../assets/hero-images/our-team.jpg");
   background-size: cover;

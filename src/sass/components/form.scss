@@ -1,0 +1,26 @@
+// CPNT 262 - Final Project 
+// Alex Madsen
+// akmadsen522@gmail.com
+// October 19, 2018 
+
+// This is the styles for the form. (Error messages are in error-messages.scss)
+form { 
+    background-color: #ccc; 
+    padding: 20px; 
+
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.form-field { 
+    width: 60%; 
+
+    label { 
+        display: inline-block; 
+    }
+
+    input { 
+        margin-left: auto;
+    }
+}
