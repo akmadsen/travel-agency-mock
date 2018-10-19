@@ -21,7 +21,7 @@ header {
         align-items: center;
         height: 100%;
 
-        /* TODO: We need to figure out a good way to indicate hovering in the header*/
+        // TODO: Clean up hovering in the header
         &:hover {
             color: $text-dark;
             text-decoration: none;

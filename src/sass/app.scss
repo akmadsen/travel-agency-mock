@@ -9,20 +9,11 @@
 
 // Components 
 @import './components/mobile-menu.scss'; 
-@import './components/buttons.scss'; 
-@import './components/card-containers.scss'; 
-@import './components/cards.scss'; 
 @import './components/header.scss'; 
 @import './components/hero.scss'; 
 @import './components/footer.scss'; 
-@import './components/form.scss'; 
-@import './components/fake-book.scss'; 
 
 // Large Aggregate Components 
 @import './components/main-section.scss'; 
 
 // Page Specific Styles
-@import './pages/index.scss'; 
-@import './pages/product.scss';
-@import './pages/about.scss';  
-@import './pages/contact.scss'; 
