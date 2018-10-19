@@ -67,6 +67,3 @@ closeButton.addEventListener('click', close);
 // 4) Any Initialization Functions
 // * * * * * * * * * * * * * * * * * * * * * * * *
 updateTime(); 
-
-console.log("HELLO, WORLD"); 
-console.log(DATE_DIV); 
