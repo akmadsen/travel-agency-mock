@@ -1,9 +1,9 @@
 // CPNT 262 - Final Project 
 // Alex Madsen
+// akmadsen522@gmail.com
 // October 19, 2018 
 
-
-
+// The footer proper 
 footer { 
     background-color: $primary-color;
     color: $text-light; 
@@ -20,11 +20,12 @@ footer {
     }
 }
 
-
+// The Footer Date/Time Display (required by project) 
 .date-time { 
     text-align: center; 
 }
 
+// Page Links within the Footer 
 .page-links { 
     ul { 
         padding: 0; 
@@ -40,7 +41,7 @@ footer {
     }
 }
 
-
+// The Social Media Icons within the Footer
 .social-media { 
 
     h2 { 

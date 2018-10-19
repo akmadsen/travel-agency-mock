@@ -1,5 +1,6 @@
 // CPNT 262 - Final Project 
 // Alex Madsen
+// akmadsen522@gmail.com 
 // October 19, 2018 
 
 
@@ -9,16 +10,17 @@
 // Mixins 
 @import './base/mixins.scss'; 
 
-// Global Styles 
+// Global Styles (TODO: Get rid of this, if possible) 
 @import './base/global-styles.scss'; 
 
-// Components 
+// Page Components 
 @import './components/mobile-menu.scss'; 
 @import './components/header.scss'; 
 @import './components/nav.scss'; 
 @import './components/hero.scss'; 
 @import './components/footer.scss';
 
+// Specialized Components 
 @import './components/travel-cards.scss'; 
 @import './components/flying-plane.scss'; 
 @import './components/error-messages.scss';

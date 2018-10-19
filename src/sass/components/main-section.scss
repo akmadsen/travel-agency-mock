@@ -1,8 +1,10 @@
 // CPNT 262 - Final Project 
 // Alex Madsen
+// akmadsen522@gmail.com
 // October 19, 2018 
 
-
+// Shared features of all page main sections 
+// (will often be specialized by each page, but not necessarily so)
 main { 
     background-color: $background-color; 
     min-height: $main-min-height; 

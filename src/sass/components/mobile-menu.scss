@@ -1,8 +1,9 @@
 // CPNT 262 - Final Project 
 // Alex Madsen
+// akmadsen522@gmail.com
 // October 19, 2018 
 
-
+// This is the mobile "Hamburger" button. 
 .open-button { 
     display: none; 
 
@@ -11,6 +12,7 @@
     }
 }
 
+// These are the styles for the mobile menu itself. 
 .mobile-menu { 
     background-color: $primary-color; 
     width: $mobile-menu-width; 
@@ -57,7 +59,7 @@
     }
 }
 
-
+// This is a "State" class for when the mobile menu is closed
 .closed { 
     transform: translate($mobile-menu-width, 0px); 
 }

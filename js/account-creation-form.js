@@ -6,12 +6,12 @@
  * This file is for processing the account generation form. 
  */
 
- // Defined Constants 
+ // Element References
 const SUBMIT_BUTTON = document.getElementById('submit-button'); 
 const ACCOUNT_FORM = document.forms[0]; // We know we only have one form 
 const ERROR_MESSAGES = document.querySelectorAll('.error'); 
 
-// Error IDs for required elements 
+// Required Field Error IDs
 const NAME_ERROR_ID = "name-error"; 
 const ADDRESS_ERROR_ID = "address-error"; 
 const CITY_ERROR_ID = "city-error"; 
@@ -20,7 +20,7 @@ const POSTAL_ERROR_ID = "postal-error";
 const EMAIL_ERROR_ID = "email-error"; 
 const PHONE_ERROR_ID = "phone-error"; 
 
-// IDs for other error messages 
+// Format Error IDs
 const POSTAL_FORMAT_ERROR_ID = "postal-error-bad-format"; 
 
 // Function Definitions
@@ -59,7 +59,10 @@ function assertRequired() {
 }
 
 function assertFormats() { 
+    // Postal Regex gathered from Stack Overflow post 
+    // https://stackoverflow.com/questions/1146202/canadian-postal-code-validation 
     let postalRegex = /[ABCEGHJKLMNPRSTVXY][0-9][ABCEGHJKLMNPRSTVWXYZ] ?[0-9][ABCEGHJKLMNPRSTVWXYZ][0-9]/
+ 
     let formatErrors = []; 
 
     let postalCode = ACCOUNT_FORM['postal-code'].value; 
@@ -100,8 +103,7 @@ function reportErrors(errorList) {
     console.log(errorList); 
 }
 
-// Interactivity 
-
+// Form Interactivity
 SUBMIT_BUTTON.addEventListener('click', (event) => {
     event.preventDefault(); 
 

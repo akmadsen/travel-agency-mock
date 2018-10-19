@@ -1,8 +1,10 @@
 // CPNT 262 - Final Project 
 // Alex Madsen
+// akmadsen522@gmail.com 
 // October 19, 2018 
 
-
+// Shared features between all headers
+// Most individual pages will overwrite some of these values (such as the background) 
 .hero { 
     background-color: yellowgreen; 
 

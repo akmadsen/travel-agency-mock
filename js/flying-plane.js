@@ -9,7 +9,7 @@
  * Adapted from Cat Walk class example. 
  */
 
-// Defined Constants 
+// HTML Element References
 const PLANE = document.getElementById('flying-plane');
 
 // Tracking Variables 
@@ -43,5 +43,5 @@ function flyPlane() {
     }
 }
 
-// Interactivity
+// Initialization Functions
 setInterval(flyPlane, 50);
