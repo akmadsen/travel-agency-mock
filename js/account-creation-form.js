@@ -25,42 +25,56 @@ const POSTAL_FORMAT_ERROR_ID = "postal-error-bad-format";
 
 // Function Definitions
 function assertRequired() { 
-    let result = [];
+    let requiredErrors = [];
     
     if (ACCOUNT_FORM['name'].value === "") { 
-        result.push(NAME_ERROR_ID); 
+        requiredErrors.push(NAME_ERROR_ID); 
     }
 
     if (ACCOUNT_FORM['address'].value === "") { 
-        result.push(ADDRESS_ERROR_ID); 
+        requiredErrors.push(ADDRESS_ERROR_ID); 
     }
 
     if (ACCOUNT_FORM['city'].value === "") { 
-        result.push(CITY_ERROR_ID); 
+        requiredErrors.push(CITY_ERROR_ID); 
     }
 
     if (ACCOUNT_FORM['province'].value === "") { 
-        result.push(PROVINCE_ERROR_ID); 
+        requiredErrors.push(PROVINCE_ERROR_ID); 
     }
 
     if (ACCOUNT_FORM['postal-code'].value === "") { 
-        result.push(POSTAL_ERROR_ID); 
+        requiredErrors.push(POSTAL_ERROR_ID); 
     }
 
     if (ACCOUNT_FORM['email'].value === "") { 
-        result.push(EMAIL_ERROR_ID); 
+        requiredErrors.push(EMAIL_ERROR_ID); 
     }
 
     if (ACCOUNT_FORM['phone'].value === "") { 
-        result.push(PHONE_ERROR_ID); 
+        requiredErrors.push(PHONE_ERROR_ID); 
     }
     
-    return result; 
+    return requiredErrors; 
 }
 
 function assertFormats() { 
-    console.log("TODO: Assert format errors"); 
-    return ['formats-boop']; 
+    let postalRegex = /[ABCEGHJKLMNPRSTVXY][0-9][ABCEGHJKLMNPRSTVWXYZ] ?[0-9][ABCEGHJKLMNPRSTVWXYZ][0-9]/
+    let formatErrors = []; 
+
+    let postalCode = ACCOUNT_FORM['postal-code'].value; 
+    postalCode = postalCode.trim(); 
+    postalCode = postalCode.toUpperCase(); 
+    
+    let postalTest = postalRegex.test(postalCode); 
+    console.log(postalTest); 
+
+    // If our postal code does not match, log an error 
+    if(!postalTest) { 
+        formatErrors.push(POSTAL_FORMAT_ERROR_ID); 
+    }
+
+    return formatErrors; 
 }
 
 function validateForm() { 
