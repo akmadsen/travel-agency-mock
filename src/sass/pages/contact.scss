@@ -5,6 +5,6 @@
 
 .contact { 
     .hero { 
-        @include generate-hero-bg($contact-hero-url, $hero-img-filter);
+        @include generate-hero-bg($contact-hero-url, $hero-img-slight-lighten);
     }
 }

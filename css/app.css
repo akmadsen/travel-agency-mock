@@ -194,7 +194,7 @@ main {
     text-align: justify; }
 
 .contact .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/hero-images/our-team.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../assets/hero-images/our-team.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
@@ -213,7 +213,9 @@ main {
   background-attachment: fixed; }
 
 .register .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/hero-images/register.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../assets/hero-images/register.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
+  .register .hero h1, .register .hero p {
+    color: #ddd; }

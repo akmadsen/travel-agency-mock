@@ -5,6 +5,10 @@
 
 .register { 
     .hero { 
-        @include generate-hero-bg($register-hero-url, $hero-img-filter);
+        @include generate-hero-bg($register-hero-url, $no-hero-img-filter);
+
+        h1, p {
+            color: $text-light; 
+        }
     }
 }

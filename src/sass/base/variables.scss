@@ -16,8 +16,11 @@ $text-light     : #ddd;
 $link-hover     : #fff; 
 $text-dark      : #222; 
 
-$hero-img-filter: rgba(0,0,0,0.2);
-
+$hero-img-filter: rgba(0,0,0,0.2); // Default - Slight Darken
+$no-hero-img-filter: rgba(0,0,0,0.0);
+$hero-img-slight-lighten: rgba(255,255,255,0.2); 
+$hero-img-lighten: rgba(255,255,255,0.4); 
+$hero-img-heavy-lighten: rgba(255,255,255,0.8); 
 
 // Bootstrap Screen Width Measurements 
 $small-devices         : 576px; 
