@@ -1,0 +1,15 @@
+// CPNT 262 - Final Project 
+// Alex Madsen
+// akmadsen522@gmail.com
+// October 19, 2018 
+
+.flying-plane {
+    color: blue;
+    position: relative;
+    bottom: 54px; // FIXME: Magic Number
+    left: 0; 
+}
+
+.flipped { 
+    transform: scale(-1, 1); 
+}

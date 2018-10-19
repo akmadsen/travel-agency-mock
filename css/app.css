@@ -164,6 +164,15 @@ footer {
   height: 200px;
   width: 200px; }
 
+.flying-plane {
+  color: blue;
+  position: relative;
+  bottom: 54px;
+  left: 0; }
+
+.flipped {
+  transform: scale(-1, 1); }
+
 main {
   background-color: #ddd;
   min-height: 400px; }
@@ -174,3 +183,6 @@ main {
     margin-bottom: 40px; }
   main p {
     text-align: justify; }
+
+.products .hero {
+  position: relative; }

@@ -20,8 +20,10 @@
 @import './components/footer.scss';
 
 @import './components/travel-cards.scss'; 
+@import './components/flying-plane.scss'; 
 
 // Large Aggregate Components 
 @import './components/main-section.scss'; 
 
 // Page Specific Styles
+@import './pages/products.scss';
