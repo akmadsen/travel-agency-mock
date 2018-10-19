@@ -24,6 +24,12 @@ const PHONE_ERROR_ID = "phone-error";
 const POSTAL_FORMAT_ERROR_ID = "postal-error-bad-format"; 
 
 // Function Definitions
+
+/**
+ * Assserts that all required fields are filled out. 
+ * 
+ * Returns an array full of the ID's of error messages that need to be activated.
+ */
 function assertRequired() { 
     let requiredErrors = [];
     
@@ -58,22 +64,38 @@ function assertRequired() {
     return requiredErrors; 
 }
 
-function assertFormats() { 
+/**
+ * Tests postal format. Returns true if OK, false otherwise. 
+ */
+function testPostalFormat() { 
+    // Don't bother testing if the postal code isn't filled out. 
+    if (ACCOUNT_FORM['postal-code'].value === "") {
+        return true; 
+    }
+
     // Postal Regex gathered from Stack Overflow post 
     // https://stackoverflow.com/questions/1146202/canadian-postal-code-validation 
-    let postalRegex = /[ABCEGHJKLMNPRSTVXY][0-9][ABCEGHJKLMNPRSTVWXYZ] ?[0-9][ABCEGHJKLMNPRSTVWXYZ][0-9]/
- 
-    let formatErrors = []; 
+    let postalRegex = /[ABCEGHJKLMNPRSTVXY][0-9][ABCEGHJKLMNPRSTVWXYZ] ?[0-9][ABCEGHJKLMNPRSTVWXYZ][0-9]/;
 
     let postalCode = ACCOUNT_FORM['postal-code'].value; 
     postalCode = postalCode.trim(); 
     postalCode = postalCode.toUpperCase(); 
-    
-    let postalTest = postalRegex.test(postalCode); 
-    console.log(postalTest); 
+
+    return postalRegex.test(postalCode); 
+}
+
+/**
+ * Asserts that the format of items we are concerned about are formed correctly. 
+ * 
+ * For this assignment, only the Postal Code was tested. 
+ * 
+ * Returns an array of IDs for any error messages that need to be activated. 
+ */
+function assertFormats() { 
+    let formatErrors = []; 
 
     // If our postal code does not match, log an error 
-    if(!postalTest) { 
+    if(!testPostalFormat()) { 
         formatErrors.push(POSTAL_FORMAT_ERROR_ID); 
     }
 
@@ -87,18 +109,30 @@ function validateForm() {
     return requiredErrors.concat(formatErrors);
 }
 
+function enableError(errorElement) { 
+    if(errorElement.classList.contains('error-closed')) { 
+        errorElement.classList.remove('error-closed'); 
+    }
+}
+
+function disableError(errorElement) { 
+    if(!errorElement.classList.contains('error-closed')) { 
+        errorElement.classList.add('error-closed'); 
+    }
+}
+
 function reportErrors(errorList) { 
+    // We only call this function if we have more than one error
     for(let i = 0; i < ERROR_MESSAGES.length; i++) { 
+
+        // Step through all our errormessages 
         let error = ERROR_MESSAGES[i]; 
         if(errorList.includes(error.id)) {
-            if(error.classList.contains('error-closed')) { 
-                error.classList.remove('error-closed'); 
-            }
+            enableError(error); 
         } else { 
-            if(!error.classList.contains('error-closed')) { 
-                error.classList.add('error-closed'); 
-            }
+            disableError(error); 
         }
+        
     }
     console.log(errorList); 
 }
